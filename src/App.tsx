@@ -24,13 +24,15 @@ const navigationData = [
   },
 ];
 
+const firstName: string = "Ayush";
+
 
 function App() {
 
   return (
     <>
       <Navbar navigationData={navigationData} />
-      <Home />
+      <Home firstName={firstName}/>
       <About />
       <Contacts />
       <Blog />
