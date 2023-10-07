@@ -1,0 +1,63 @@
+.contianer {
+  
+  padding-top: 3rem;
+}
+
+.title {
+  text-align: center;
+  color: white;
+}
+
+.siteOwnerName {
+  line-height: 1.5rem;
+  margin: 0;
+  font-size: 60px;
+  background: -webkit-linear-gradient(
+    144deg,
+    rgba(131, 58, 180, 1) 10%,
+    rgba(253, 29, 29, 1) 50%,
+    rgba(252, 176, 69, 1) 90%
+  );
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+
+.dpHolder{
+    width: 10rem;
+    border-radius: 5rem;
+    align-self: center;
+    border: 0.2rem solid rgb(222, 226, 255);
+    box-shadow: 1px 1px 3rem 1px rgb(12, 12, 12);
+}
+
+
+.banner{
+    padding:2rem 0rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    
+}
+
+
+@media screen and (min-width: 992px) {
+  .container {
+    padding: 3rem 1rem;
+  }
+
+  .title {
+    text-align: left;
+  }
+
+  .siteOwnerName {
+    font-size: 2em;
+    line-height: 3rem;
+  }
+  .banner{
+    flex-direction: row-reverse;
+    justify-content: space-around;
+    align-items: center;
+  }
+}
