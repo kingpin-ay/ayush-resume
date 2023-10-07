@@ -1,0 +1,11 @@
+
+
+const Blog = () => {
+  return (
+    <div id="blog" style={{textAlign:"center"}}>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam in inventore dignissimos unde eum perferendis illo asperiores dolorum tempora minus? At corporis mollitia obcaecati vel fugit commodi odit voluptatibus? Doloremque laboriosam velit quos minima consequuntur maxime molestias rem pariatur nulla, eos consequatur eius in. Sequi dolores voluptatibus ex ipsum ipsam rerum. Numquam, assumenda labore. Voluptas suscipit eligendi placeat esse aspernatur excepturi sapiente quae architecto inventore dicta, illum, explicabo magni eveniet nihil omnis assumenda expedita deleniti perspiciatis ipsum pariatur aut non voluptatem est? Quod non nulla possimus. Enim fuga vero repellendus excepturi natus et ab quo doloribus, eos laboriosam dolorem amet necessitatibus dignissimos odio. Blanditiis rem ut minima, animi debitis aliquam laudantium veritatis quod unde at porro alias eum suscipit corrupti sapiente nobis. Quod sapiente laudantium deleniti nemo modi, impedit magni veritatis itaque voluptas ipsum eveniet consectetur rerum quas fugiat, ullam sequi. Aliquam reprehenderit voluptatem a vitae est maiores placeat repellat architecto pariatur expedita dolores veniam veritatis dicta omnis neque delectus optio laudantium, dolor unde. Eius, quam. Repellat tempore at sed amet omnis est voluptate vel mollitia dolore delectus reiciendis consectetur minima hic illo quos provident quo quisquam a deserunt, porro nostrum iure. Consectetur perspiciatis, repudiandae est voluptatem adipisci beatae nemo hic inventore dolore voluptas ex doloribus obcaecati quia provident temporibus, magnam fugit odit ea? Omnis, consectetur ratione possimus cum facere cumque maxime neque iste natus, ipsa atque architecto. Error magnam asperiores quisquam quod deleniti reiciendis, iure culpa eligendi quo quis facilis rerum sunt at, consequuntur, sequi nam? Ad, unde quos adipisci, molestiae incidunt odit modi soluta inventore labore quaerat quisquam facere, tempora ipsa saepe impedit esse recusandae officiis itaque magnam. Id sit nulla, voluptate nemo, vel neque, tenetur doloribus nesciunt officia blanditiis vitae? Delectus repudiandae rem laudantium ipsum nisi nesciunt ab nulla doloremque officiis accusamus, eius facere sequi suscipit pariatur?
+    </div>
+  )
+}
+
+export default Blog

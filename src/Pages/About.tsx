@@ -1,0 +1,11 @@
+
+
+const About = () => {
+  return (
+    <div id="about" style={{textAlign:"center"}}>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto nemo distinctio minus eius deleniti id! Illo in adipisci fugit, aliquam veniam natus sapiente quam iure sit, autem iusto dicta voluptas ratione necessitatibus magni architecto deserunt quidem rerum odit? Iure tempora, in provident sapiente voluptate perferendis ad! A est officiis quia doloremque nihil maiores, cum rem magnam suscipit fuga accusamus fugit dicta eius nobis iusto aut voluptas voluptatem, ipsam eos. Mollitia minima laboriosam possimus modi debitis sunt molestiae nobis similique delectus quo, neque magni, voluptates placeat odio dolore hic libero, autem aliquam omnis distinctio. Fugiat ipsum facere porro minus omnis dicta aliquam ratione ab praesentium ipsa fuga dolorem officia nihil sunt possimus unde labore corporis optio, quae quasi exercitationem magnam. Aperiam ut reprehenderit blanditiis deleniti vero ratione sint accusantium, veniam nihil sequi iure delectus eaque odio maxime, nesciunt error perferendis quis, totam temporibus assumenda quaerat. Vel, iusto accusantium quo soluta dolores mollitia illo veniam, maxime fugiat minima eos nam rem veritatis placeat aperiam. Sequi repellendus earum odit ut reiciendis maiores dignissimos nihil, adipisci illum at iste sed incidunt error ratione distinctio impedit provident cumque saepe nemo consequuntur, veritatis doloribus voluptatem nisi consequatur! Quos nisi aperiam sint ipsum quae laboriosam facere labore dolor, recusandae quidem ad perspiciatis veniam, cumque totam a distinctio? Minus nostrum temporibus magnam esse nihil tenetur natus perferendis quae incidunt praesentium? Suscipit veritatis quas sit similique unde explicabo temporibus aut numquam! Cumque facere dolor animi quae ipsam perferendis natus maiores, facilis voluptates, ex deleniti necessitatibus provident dolore, repellat id nesciunt laborum pariatur blanditiis minus a molestiae accusamus. Ab sequi, fugiat quo ipsa tenetur aut maiores assumenda nobis molestiae quam. Nobis sapiente esse aperiam quam eos deleniti praesentium. Voluptatem, voluptatum! Illum natus atque quia commodi aliquam quos quasi totam, eaque ullam, modi amet id assumenda veritatis quibusdam vero enim quam.
+    </div>
+  )
+}
+
+export default About
