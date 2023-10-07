@@ -1,0 +1,40 @@
+.container {
+    -webkit-backdrop-filter: blur(7px);
+    backdrop-filter: blur(7px);
+    background-color: rgba(20 , 20 ,20 , 0.5); 
+    font-weight: bold;
+    border-radius: 2rem;
+    padding: 0.6rem 1.5rem;
+    position: sticky;
+    top: 1rem;
+    z-index: 100;
+}
+
+.navigationList{
+    list-style: none;
+    display: flex;
+    width: inherit;
+    justify-content: space-around;
+}
+
+.navigationList > li {
+    transition: all 0.2s ease-in-out;
+    padding: 0 1rem;
+    border-radius: 1rem;
+}
+
+.navigationList > li:hover{
+    cursor: pointer;
+}
+
+.navigationList > li > a {
+    text-decoration: none;
+    color: rgb(222, 226, 255);
+}
+.navigationList > li > a:hover {
+    color: rgb(254, 234, 250);
+}
+
+
+
+
