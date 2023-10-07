@@ -4,7 +4,7 @@ import dp from "../../assets/DP.jpg";
 
 
 
-const Home = () => {
+const Home = (props : Props) => {
   return (
     <motion.div id="home" className={style.container}>
       <motion.div className={style.banner}>
@@ -23,12 +23,16 @@ const Home = () => {
           transition={{ type: "spring", delay: 0.2, duration: 0.3 }}
         >
           Welcome To <br />
-          <span className={style.siteOwnerName}>Ayush</span>'s Website
+          <span className={style.siteOwnerName}>{props.firstName}</span>'s Website
         </motion.h1>
       </motion.div>
     </motion.div>
   );
 };
+
+type Props ={
+  firstName: string;
+}
 
 
 
