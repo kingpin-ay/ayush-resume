@@ -1,5 +1,4 @@
 .contianer {
-  
   padding-top: 3rem;
 }
 
@@ -23,24 +22,97 @@
   -webkit-text-fill-color: transparent;
 }
 
-
-.dpHolder{
-    width: 10rem;
-    border-radius: 5rem;
-    align-self: center;
-    border: 0.2rem solid rgb(222, 226, 255);
-    box-shadow: 1px 1px 3rem 1px rgb(12, 12, 12);
+.dpHolder {
+  width: 10rem;
+  border-radius: 5rem;
+  align-self: center;
+  border: 0.2rem solid rgb(222, 226, 255);
+  box-shadow: 1px 1px 0.8rem 1px rgb(12, 12, 12);
 }
 
-
-.banner{
-    padding:2rem 0rem;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    
+.myWorkText {
+  color: rgb(241, 94, 94);
+  font-weight: bold;
+  border-bottom: 1px dotted;
 }
 
+.banner {
+  padding: 2rem 0rem;
+  padding-bottom: 0.6rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.aboutSection {
+  text-align: center;
+  color: white;
+}
+
+.expertise {
+  background: radial-gradient(
+    circle,
+    rgba(238, 174, 202, 1) 0%,
+    rgba(148, 187, 233, 1) 100%
+  );
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  border-bottom: 1px dotted white;
+  font-weight: bold;
+}
+
+.field {
+  background: radial-gradient(
+    circle,
+    rgba(63, 94, 251, 1) 0%,
+    rgba(252, 70, 107, 1) 100%
+  );
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  border-bottom: 1px dotted rgba(252, 176, 69, 1);
+  font-weight: bold;
+}
+
+.toolsContainer {
+  margin-top: 1rem;
+}
+.toolsContainer > section {
+  padding: 0rem 2rem;
+}
+
+.toolsImageContainer {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 0.5rem;
+  row-gap: 1rem;
+  padding: 1rem 2rem;
+}
+
+.toolsImageContainer > div {
+  width: inherit;
+  display: flex;
+  justify-content: space-around;
+}
+.toolsImageContainer > div > img {
+  cursor: pointer;
+}
+
+.toolsContainer > section > p {
+  text-align: center;
+  color: white;
+  font-weight: bold;
+  font-size: 26px;
+  padding-bottom: 0.5rem;
+  border-bottom: 1px solid;
+}
+.toolImage {
+  width: 48px;
+  object-fit: contain;
+  align-items: center;
+  height: 48px;
+}
 
 @media screen and (min-width: 992px) {
   .container {
@@ -55,9 +127,21 @@
     font-size: 2em;
     line-height: 3rem;
   }
-  .banner{
+  .banner {
     flex-direction: row-reverse;
     justify-content: space-around;
     align-items: center;
+    padding-bottom: 1rem;
+  }
+  .toolsImageContainer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 0.5rem;
+    padding: 1rem 2rem;
+  }
+
+  .aboutSection {
+    margin-top: 2rem;
   }
 }
