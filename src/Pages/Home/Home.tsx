@@ -1,5 +1,5 @@
 import style from "./Home.module.css";
-import dp from "../../assets/DP.jpg";
+import dp from "../../assets/dp.jpg";
 import ReavealAnimation from "../../animationLayouts/RevealAnimation";
 
 const Home = (props: Props) => {
