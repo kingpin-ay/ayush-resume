@@ -1,11 +1,21 @@
 import style from "./Home.module.css";
 import dp from "../../assets/dp.jpg";
+import { delayTimes } from "../../static/animationParameters";
 import ReavealAnimation from "../../animationLayouts/RevealAnimation";
+import MySecondDescription from "../../component/Home/MySecondDescription";
+import { useEffect, useState } from "react";
 
 const Home = (props: Props) => {
+  const [isPhone, setIsPhone] = useState<boolean>();
+
+  useEffect(() => {
+    const currentWidth = window.innerWidth;
+    setIsPhone(currentWidth <= 990 ? true : false);
+  }, []);
+
   return (
     <div id="home" className={style.container}>
-      <ReavealAnimation>
+      <ReavealAnimation delay={delayTimes.defalutPageDelays.bannerDelay}>
         <div className={style.banner}>
           <img src={dp} alt="My Image" className={style.dpHolder} />
           <h1 className={style.title}>
@@ -17,7 +27,9 @@ const Home = (props: Props) => {
       </ReavealAnimation>
 
       <div>
-        <ReavealAnimation>
+        <ReavealAnimation
+          delay={delayTimes.defalutPageDelays.myDescriptionDelay}
+        >
           <p className={style.aboutSection}>
             I am a passionate{" "}
             <span className={style.myWorkText}>{props.profession}</span> with a
@@ -35,7 +47,9 @@ const Home = (props: Props) => {
             relentless pursuit of excellence.
           </p>
         </ReavealAnimation>
-        <ReavealAnimation>
+        <ReavealAnimation
+          delay={delayTimes.defalutPageDelays.usedToolsShowcaseDelay}
+        >
           <div className={style.toolsContainer}>
             <section>
               <p>Tools That I use</p>
@@ -55,22 +69,20 @@ const Home = (props: Props) => {
             </div>
           </div>
         </ReavealAnimation>
-        <ReavealAnimation>
-          <p className={style.aboutSection}>
-            I believe in the power of{" "}
-            <span className={style.myWorkText}>
-              {props.myApproach.workPrinciple}
-            </span>
-            . With a keen eye for detail and a knack for problem-solving, I
-            approach every project with
-            <span className={style.expertise}>
-              {" "}
-              {props.myApproach.approach}
-            </span>
-            . My goal is not just to meet your expectations but to exceed them,
-            crafting experiences that leave a lasting impact.
-          </p>
-        </ReavealAnimation>
+            
+        {/* for phone view */}
+        <MySecondDescription
+          delay={delayTimes.defalutPageDelays.myDescriptionDelay__second}
+          myApproach={props.myApproach}
+          display={isPhone ? true : false}
+        />
+
+        {/* for computer view */}
+        <MySecondDescription
+          delay={delayTimes.defaultDelayAfterScroll}
+          myApproach={props.myApproach}
+          display={isPhone ? false : true}
+        />
       </div>
     </div>
   );

@@ -1,0 +1,23 @@
+.aboutSection {
+  text-align: center;
+  color: white;
+}
+
+.expertise {
+  background: radial-gradient(
+    circle,
+    rgba(238, 174, 202, 1) 0%,
+    rgba(148, 187, 233, 1) 100%
+  );
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  border-bottom: 1px dotted white;
+  font-weight: bold;
+}
+
+.myWorkText {
+  color: rgb(241, 94, 94);
+  font-weight: bold;
+  border-bottom: 1px dotted;
+}

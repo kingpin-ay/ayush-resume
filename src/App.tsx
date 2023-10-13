@@ -78,6 +78,8 @@ const myApproach : {workPrinciple : string , approach: string} = {
   approach: "Divide-and-conquer"
 }
 
+
+
 function App() {
   return (
     <>
