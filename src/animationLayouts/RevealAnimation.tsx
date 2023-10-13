@@ -1,7 +1,8 @@
 import { useRef, useEffect } from "react";
 import { motion, useInView, useAnimation } from "framer-motion";
+import { delayTimes, animationDuration } from "../static/animationParameters";
 
-const ReavealAnimation = ({ children }: Props) => {
+const ReavealAnimation = ({ children, delay, display }: Props) => {
   const referenceToTheMainDiv = useRef(null);
   const isInView = useInView(referenceToTheMainDiv, { once: true });
   const mainControls = useAnimation();
@@ -10,11 +11,15 @@ const ReavealAnimation = ({ children }: Props) => {
     if (isInView) {
       mainControls.start("visible");
     }
-  }, [isInView , mainControls]);
+  }, [isInView, mainControls]);
   return (
     <div
       ref={referenceToTheMainDiv}
-      style={{ position: "relative", overflow: "hidden" }}
+      style={{
+        position: "relative",
+        overflow: "hidden",
+        display: display ? "none" : "",
+      }}
     >
       <motion.div
         variants={{
@@ -29,7 +34,10 @@ const ReavealAnimation = ({ children }: Props) => {
         }}
         initial="hidden"
         animate={mainControls}
-        transition={{ delay: 0.25, duration: 0.5 }}
+        transition={{
+          delay: delay ? delay : delayTimes.defaultDelayAfterScroll,
+          duration: animationDuration.defaultAnimationDuration,
+        }}
       >
         {children}
       </motion.div>
@@ -40,6 +48,8 @@ const ReavealAnimation = ({ children }: Props) => {
 interface Props {
   children: JSX.Element;
   width?: "fit-content" | "100%" | null;
+  delay?: number;
+  display?: boolean ;
 }
 
 export default ReavealAnimation;
