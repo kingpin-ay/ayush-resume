@@ -58,3 +58,24 @@ If you are developing a production application, we recommend updating the config
 ## License
 
 [MIT](https://choosealicense.com/licenses/mit/)
+
+
+## Used things (Also some usefull links)
+- (Icons) [https://icones.js.org/]
+- (Shadow Palette) [https://www.joshwcomeau.com/shadow-palette/]
+- (Css Shapes) [https://css-generators.com/]
+- (FavIcon) [https://realfavicongenerator.net/]
+- (Css Debug Extension) [https://visbug.web.app/]
+- (Theme Generator) [https://realtimecolors.com]
+- (Font combo) [https://www.fontpair.co/all]
+- (CSS Extra shades) [https://app.haikei.app]
+- (Extra tools) [https://omatsuri.app/]
+- (Gradient Color) [https://gradient.style/]
+
+
+
+
+## TODO LIST
+
+- [] add lazy loading with blushash
+- [] navbar sticky is not working
