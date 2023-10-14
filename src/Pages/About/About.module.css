@@ -1,0 +1,47 @@
+.container{
+    margin-top: 15rem;
+    color: white;
+    text-align: center;
+}
+
+.mainSectionHeading{
+    font-size: 48px;
+    font-weight: bold;
+    border-bottom: 1px solid white;
+    margin: 0rem 2rem;
+}
+
+.coverSection{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 2rem;
+}
+
+.introductionTitle{
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.coverImage{
+    width: 20rem;
+    border-radius: 1rem;
+    border: 0.2rem solid white;
+}
+
+
+@media screen and (min-width: 992px) {
+    .mainSectionHeading{
+        margin: 0rem 4rem;
+    }
+    /* .coverSection{
+        flex-direction: row;
+    } */
+
+    .coverImage{
+        width: 40rem;
+        border-radius: 1rem;
+        border: 0.2rem solid white;
+    }
+}

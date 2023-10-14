@@ -1,6 +1,6 @@
 .aboutSection {
   text-align: center;
-  color: white;
+  color: var(--text);
 }
 
 .expertise {

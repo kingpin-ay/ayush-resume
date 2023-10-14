@@ -4,7 +4,7 @@
 
 .title {
   text-align: center;
-  color: white;
+  color: var(--text);
 }
 
 .siteOwnerName {
@@ -26,8 +26,8 @@
   width: 10rem;
   border-radius: 5rem;
   align-self: center;
-  border: 0.2rem solid rgb(222, 226, 255);
-  box-shadow: 1px 1px 0.8rem 1px rgb(12, 12, 12);
+  border: 1px solid var(--text);
+  box-shadow: var(--shadow-elevation-medium);
 }
 
 .myWorkText {
@@ -46,7 +46,7 @@
 
 .aboutSection {
   text-align: center;
-  color: white;
+  color: var(--text);
 }
 
 .expertise {
@@ -101,7 +101,7 @@
 
 .toolsContainer > section > p {
   text-align: center;
-  color: white;
+  color: var(--text);
   font-weight: bold;
   font-size: 26px;
   padding-bottom: 0.5rem;
@@ -126,6 +126,9 @@
   .siteOwnerName {
     font-size: 2em;
     line-height: 3rem;
+  }
+  .dpHolder {
+    border: 0.15rem solid var(--text);
   }
   .banner {
     flex-direction: row-reverse;

@@ -49,7 +49,7 @@ interface Props {
   children: JSX.Element;
   width?: "fit-content" | "100%" | null;
   delay?: number;
-  display?: boolean ;
+  display?: boolean;
 }
 
 export default ReavealAnimation;

@@ -1,13 +1,15 @@
 .container {
-    -webkit-backdrop-filter: blur(7px);
-    backdrop-filter: blur(7px);
-    background-color: rgba(20 , 20 ,20 , 0.5); 
+    -webkit-backdrop-filter: blur(12px);
+    backdrop-filter: blur(12px);
+    background-color: var(--background) 50%; 
+    border: 1px solid var(--text);
     font-weight: bold;
     border-radius: 2rem;
     padding: 0.6rem 1.5rem;
     position: sticky;
+    position: -webkit-sticky;
     top: 1rem;
-    z-index: 100;
+    z-index: 2;
 }
 
 .navigationList{
@@ -29,10 +31,15 @@
 
 .navigationList > li > a {
     text-decoration: none;
-    color: rgb(222, 226, 255);
+    color: var(--text);
 }
 .navigationList > li > a:hover {
-    color: rgb(254, 234, 250);
+    color: var(--primary);
+}
+
+
+.activeLink{
+    border-bottom: 1px solid var(--primary , red);
 }
 
 

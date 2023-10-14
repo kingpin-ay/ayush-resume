@@ -1,8 +1,9 @@
-import About from "./Pages/About";
+import About from "./Pages/About/About";
 import Blog from "./Pages/Blog";
 import Contacts from "./Pages/Contacts";
 import Home from "./Pages/Home/Home";
 import Navbar from "./component/Navbar/Navbar";
+
 
 const navigationData = [
   {

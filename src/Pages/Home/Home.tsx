@@ -17,7 +17,7 @@ const Home = (props: Props) => {
     <div id="home" className={style.container}>
       <ReavealAnimation delay={delayTimes.defalutPageDelays.bannerDelay}>
         <div className={style.banner}>
-          <img src={dp} alt="My Image" className={style.dpHolder} />
+          <img src={dp} alt="My Image" className={style.dpHolder} loading="lazy"/>
           <h1 className={style.title}>
             Welcome To <br />
             <span className={style.siteOwnerName}>{props.firstName}</span>'s
@@ -62,6 +62,7 @@ const Home = (props: Props) => {
                       className={style.toolImage}
                       src={eachTool.url}
                       alt={eachTool.altText}
+                      loading="lazy"
                     />
                   </div>
                 );
