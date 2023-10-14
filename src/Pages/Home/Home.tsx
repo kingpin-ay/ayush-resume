@@ -7,17 +7,26 @@ import { useEffect, useState } from "react";
 
 const Home = (props: Props) => {
   const [isPhone, setIsPhone] = useState<boolean>();
+  const [currentTheme , setTheme] = useState(true);
 
   useEffect(() => {
     const currentWidth = window.innerWidth;
     setIsPhone(currentWidth <= 990 ? true : false);
   }, []);
 
+  const handleThemeChange = () => {
+    const rootElement = document.querySelector("html");
+    if(currentTheme) rootElement?.setAttribute("data-theme" , "dark");
+    if(!currentTheme) rootElement?.setAttribute("data-theme" , "light");
+    setTheme(!currentTheme);
+    
+  }
+
   return (
     <div id="home" className={style.container}>
       <ReavealAnimation delay={delayTimes.defalutPageDelays.bannerDelay}>
         <div className={style.banner}>
-          <img src={dp} alt="My Image" className={style.dpHolder} loading="lazy"/>
+          <img src={dp} alt="My Image" className={style.dpHolder}  onClick={handleThemeChange} loading="lazy"/>
           <h1 className={style.title}>
             Welcome To <br />
             <span className={style.siteOwnerName}>{props.firstName}</span>'s

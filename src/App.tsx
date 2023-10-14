@@ -79,6 +79,9 @@ const myApproach : {workPrinciple : string , approach: string} = {
   approach: "Divide-and-conquer"
 }
 
+const fullName: string = "Ayush Mondal";
+const location: string = "Rajarhat, West Bengal, India"
+
 
 
 function App() {
@@ -93,7 +96,7 @@ function App() {
         myField={myField}
         usedToolsLogo={ToolsLogo}
       />
-      <About />
+      <About fullName={fullName} specialty={profession} location={location}/>
       <Contacts />
       <Blog />
     </>

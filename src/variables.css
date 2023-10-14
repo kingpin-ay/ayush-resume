@@ -52,3 +52,15 @@
 }
 
 
+:root{
+  --title-color: -webkit-linear-gradient(
+    144deg,
+    rgba(131, 58, 180, 1) 10%,
+    rgba(253, 29, 29, 1) 50%,
+    rgba(252, 176, 69, 1) 90%
+  );
+  --starter-red:rgb(241, 94, 94);
+  --passion-color: linear-gradient(132deg, #ff00fa 15% 15%, #0ff 100%);
+}
+
+

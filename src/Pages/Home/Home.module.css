@@ -11,12 +11,7 @@
   line-height: 1.5rem;
   margin: 0;
   font-size: 60px;
-  background: -webkit-linear-gradient(
-    144deg,
-    rgba(131, 58, 180, 1) 10%,
-    rgba(253, 29, 29, 1) 50%,
-    rgba(252, 176, 69, 1) 90%
-  );
+  background: var(--title-color);
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -29,9 +24,12 @@
   border: 1px solid var(--text);
   box-shadow: var(--shadow-elevation-medium);
 }
+:hover {
+  cursor: pointer;
+}
 
 .myWorkText {
-  color: rgb(241, 94, 94);
+  color: var(--starter-red);
   font-weight: bold;
   border-bottom: 1px dotted;
 }
@@ -42,6 +40,7 @@
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  gap: 1rem;
 }
 
 .aboutSection {
@@ -135,6 +134,7 @@
     justify-content: space-around;
     align-items: center;
     padding-bottom: 1rem;
+    gap: "";
   }
   .toolsImageContainer {
     display: flex;
